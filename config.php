@@ -27,5 +27,5 @@ define('CONTROLLER_DIR', APPLICATION_DIR.'controllers'.DIRECTORY_SEPARATOR);
 define('MODEL_DIR', APPLICATION_DIR.'models'.DIRECTORY_SEPARATOR);
 define('MODULE_DIR', APPLICATION_DIR.'modules'.DIRECTORY_SEPARATOR);
 define('VIEW_DIR', APPLICATION_DIR.'views'.DIRECTORY_SEPARATOR);
-define('PROJECT_NAME', 'PowerChordPHP v0.0.1');
+define('PROJECT_NAME', 'PowerChordPHP');
 define('DB','powerchord.sqlite');

@@ -22,18 +22,59 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
-<html>
+<html lang="en">
     <?php
     define('THISBESTBEDEFINED', 'OhItsDefinedOverHere');
     require_once 'includes.php';
     ?>
     <head>
-        <meta charset="UTF-8">
-        <title></title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="PowerChordPHP: For when you ain't writing a symphony.
+              A Simple PHP application framework for coders who just wanna plugin and Rock Out. Solves many of 
+              the annoyances of PHP frameworks pseudo MVC structure by implementing a DataGate object to extend. 
+              This allows you to send superglobal data to and from Models directly in the view, skipping the controller. 
+              Made for the SQlite PDO driver and only the SQlite PDO driver out of the box. PowerChordPHP comes with a 
+              powerchord.sqlite database ready to use all you need do is extend the model class. You're too Rock 'n' Roll
+              to worry about connecting to a database. You've got a Model to do that dirty work for you!
+              Download the SQLite Manager add-on for Firefox, create some tables, extend the Model class, and jam!
+              Portable, like a guitar on your back. You can copy your project directory and plop it down anywhere 
+              thanks to SQLite. If you're hosting company pisses you off, pick up your directory and go.
+              Focus on your PHP, javascript, and style. Churn out code like the Beatles churned out hits.
+              Written by J-Do, so you know it's good.">
+        <meta name="author" content="Jason Hittle">
+        <link rel="shortcut icon" href="icon_48.png">
+        <title><?= PROJECT_NAME; ?></title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/styles.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <?=PROJECT_NAME;?>
+            </div>
+        </div>
         <?php
-        // put your code here
         ?>
+        <footer style="background-color: #afcc66; position: fixed; bottom: 0px; padding: 10px; width: 100%;">     
+            <a href="http://jdoscodez.blogspot.com/">
+                <img src="img/jdoLogo.svg" width="24" height="24" alt="icon_48"/>
+            </a>
+            <i>Powered by PowerChord &copy; Jason Hittle</i>
+        </footer>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./js/jquery.js"></script>
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+        <script src="./js/controllers.js"></script>
     </body>
 </html>
