@@ -35,8 +35,9 @@ class Intro_Controller extends Controller
     function index()
     {
         $this->vars['jumbotron']['heading'] = "PowerChordPHP";
-        $this->vars['jumbotron']['tagline'] = "...for coders who just wanna plug in and rock out.";
+        $this->vars['jumbotron']['tagline'] = "...for coders who just wanna plug in and rock.";
         $this->vars['jumbotron']['imageUrl'] = './img/powerChordLogoSqr.svg';
+        $this->vars['jumbotron']['downloadLink'] = 'https://github.com/j-do/PowerChordPHP/archive/master.zip';
         $this->addView('jumbotron');
         
         $intro = new Intro_Model();

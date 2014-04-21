@@ -60,8 +60,7 @@ THE SOFTWARE.
             <div class="container">
                 <a class="navbar-brand" href="#"><?= PROJECT_NAME; ?></a>             
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Tutorials</a></li>              
+                    <li><a href="http://powerchordphp.blogspot.com/">Blog</a></li>            
                 </ul>
             </div>
         </div>
@@ -70,7 +69,7 @@ THE SOFTWARE.
         ?>
         <footer style="background-color: #514831; position: static; bottom: 0px; padding: 10px; width: 100%;">     
             <a href="http://jdoscodez.blogspot.com/">
-                <img src="img/jdoLogo.svg" width="24" height="24" alt="icon_48"/>
+                <img src="img/powerChordLogoRect.svg" width="48" height="48" alt="icon_48"/>
             </a>
             <i>Powered by PowerChord &copy; Jason Hittle</i>
         </footer>

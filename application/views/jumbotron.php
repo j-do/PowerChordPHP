@@ -1,11 +1,13 @@
 <div class="jumbotron">
     <div class="container">
         <div class="pull-left">
-            <img src="<?= $this->vars['jumbotron']['imageUrl'];?>" alt="jdoLogoNoText" width="150px"/>
+            <img src="<?= $this->vars['jumbotron']['imageUrl']; ?>" alt="jdoLogoNoText" width="150px"/>
         </div>
         <h1 class="page-header"><?= $this->vars['jumbotron']['heading']; ?></h1>
         <h3 class="blockquote-reverse"><?= $this->vars['jumbotron']['tagline']; ?></h3>
-        <button class="btn btn-primary pull-right"><p>Download Now!</p><span class="glyphicon glyphicon-download"></span></button>
+        <a class="btn btn-primary pull-right" href="<?= $this->vars['jumbotron']['downloadLink']; ?>">
+            <p>Download Now!</p><span class="glyphicon glyphicon-download"></span>
+        </a>
     </div>
 </div>
 
