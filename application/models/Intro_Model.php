@@ -1,4 +1,4 @@
-<?php if ( ! defined('THISBESTBEDEFINED')) exit('No direct script access allowed');
+<?php
 
 /*
  * The MIT License
@@ -25,23 +25,20 @@
  */
 
 /**
- * Extends Controller Class shows the home page
+ * Extends the model class
  *
  * @author Jason "J-Do" Hittle 
  */
-class Intro_Controller extends Controller
+class Intro_Model extends Model
 {
 
-    function index()
+    protected function setTableName()
     {
-        $this->vars['jumbotron']['heading'] = "PowerChordPHP";
-        $this->vars['jumbotron']['tagline'] = "...for coders who just wanna plug in and rock out.";
-        $this->vars['jumbotron']['imageUrl'] = './img/powerChordLogoSqr.svg';
-        $this->addView('jumbotron');
-        
-        $intro = new Intro_Model();
-        $this->vars['marketingJibbaJabba'] = $intro->getMarketingJibbaJabba();
-        $this->addView('marketingJibbaJabba');
+        $this->tableName = 'intro';
+    }
+    
+    function getMarketingJibbaJabba(){
+        return $this->sqlite->query("select * from {$this->tableName}");
     }
 
 }

@@ -70,7 +70,7 @@ THE SOFTWARE.
         <?php
         $ic = new Intro_Controller();
         ?>
-        <footer style="background-color: #514831; position: fixed; bottom: 0px; padding: 10px; width: 100%;">     
+        <footer style="background-color: #514831; position: static; bottom: 0px; padding: 10px; width: 100%;">     
             <a href="http://jdoscodez.blogspot.com/">
                 <img src="img/jdoLogo.svg" width="24" height="24" alt="icon_48"/>
             </a>
