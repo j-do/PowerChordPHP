@@ -33,7 +33,7 @@ THE SOFTWARE.
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="PowerChordPHP: For when you ain't writing a symphony.
               A Simple PHP application framework for coders who just wanna plugin and Rock Out. Solves many of 
-              the annoyances of PHP frameworks pseudo MVC structure by implementing a DataGate object to extend. 
+              the annoyances the traditional PHP MVC structure by having a DataGate object to extend. 
               This allows you to send superglobal data to and from Models directly in the view, skipping the controller. 
               Made for the SQlite PDO driver and only the SQlite PDO driver out of the box. PowerChordPHP comes with a 
               powerchord.sqlite database ready to use all you need do is extend the model class. You're too Rock 'n' Roll
@@ -41,8 +41,7 @@ THE SOFTWARE.
               Download the SQLite Manager add-on for Firefox, create some tables, extend the Model class, and jam!
               Portable, like a guitar on your back. You can copy your project directory and plop it down anywhere 
               thanks to SQLite. If you're hosting company pisses you off, pick up your directory and go.
-              Focus on your PHP, javascript, and style. Churn out code like the Beatles churned out hits.
-              Written by J-Do, so you know it's good.">
+              Focus on your PHP, javascript, and style. Churn out code like the Beatles churned out hits.">
         <meta name="author" content="Jason Hittle">
         <link rel="shortcut icon" href="icon_48.png">
         <title><?= PROJECT_NAME; ?></title>
@@ -61,9 +60,8 @@ THE SOFTWARE.
             <div class="container">
                 <a class="navbar-brand" href="#"><?= PROJECT_NAME; ?></a>             
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
                     <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Download</a></li>              
+                    <li><a href="#">Tutorials</a></li>              
                 </ul>
             </div>
         </div>
