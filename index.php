@@ -57,14 +57,20 @@ THE SOFTWARE.
         <![endif]-->
     </head>
     <body>
-        <div class="navbar navbar-default">
+        <div class="navbar navbar-default navbar-static-top">
             <div class="container">
-                <?=PROJECT_NAME;?>
+                <a class="navbar-brand" href="#"><?= PROJECT_NAME; ?></a>             
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Download</a></li>              
+                </ul>
             </div>
         </div>
         <?php
+        $ic = new Intro_Controller();
         ?>
-        <footer style="background-color: #afcc66; position: fixed; bottom: 0px; padding: 10px; width: 100%;">     
+        <footer style="background-color: #514831; position: fixed; bottom: 0px; padding: 10px; width: 100%;">     
             <a href="http://jdoscodez.blogspot.com/">
                 <img src="img/jdoLogo.svg" width="24" height="24" alt="icon_48"/>
             </a>
