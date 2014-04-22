@@ -74,7 +74,7 @@ class SqlitePDO
     
     /**
      * A simple query, not a prepared statement, use this one when there's no pesky
-     * user input to deal with
+     * user input to deal with or you've cleaned it yourself
      * @param string $statement
      * @return array
      */

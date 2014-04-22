@@ -1,10 +1,10 @@
 PowerChordPHP: For when you ain't writing a symphony.
 =========================================================
-A Simple PHP application framework for coders who just wanna plugin and Rock Out.
+...cut out the middleman, plug in, and rock.
 ---------------------------------------------------------------------------------------------------------
 ## Features:
-### Quicker Development and Better Encapsulation
-Solves many of the annoyances PHP frameworks pseudo MVC structure by implementing a "DataGate" object to extend. This allows you to send superglobal data to and from Models directly in the view, skipping the controller. 
+### Rapid and Flexible Development
+Solves the main annoyance the PHP framework's pseudo MVC structure by implementing a "DataGate" object to extend. This allows you to send superglobal data to and from Models directly in the view, skipping the controller entirely.
 **The DataGate object answers the question: _Where the heck do I put this method?_**
 
 ### Made for the SQlite PDO driver and only the SQlite PDO driver out of the box
