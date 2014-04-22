@@ -34,15 +34,17 @@ class Intro_Controller extends Controller
 
     function index()
     {
+        //The old MVC paradigm is still possible in PowerChordPHP
         $this->vars['jumbotron']['heading'] = "PowerChordPHP";
-        $this->vars['jumbotron']['tagline'] = "...for coders who just wanna plug in and rock.";
+        $this->vars['jumbotron']['tagline'] = "...cut out the middleman, plug in, and rock.";
         $this->vars['jumbotron']['imageUrl'] = './img/powerChordLogoSqr.svg';
         $this->vars['jumbotron']['downloadLink'] = 'https://github.com/j-do/PowerChordPHP/archive/master.zip';
         $this->addView('jumbotron');
         
-        $intro = new Intro_Model();
-        $this->vars['marketingJibbaJabba'] = $intro->getMarketingJibbaJabba();
-        $this->addView('marketingJibbaJabba');
+        //But you can enjoy the rapid and flexible development of the PowerChordPHP
+        //way as well. Take a look at ../views/marketingJibbaJabba.php to see what I'm
+        //talking about. . Data is available in any view at any time. Is it the most OOP
+        //way to be? PowerChordPHP don't care.
     }
 
 }

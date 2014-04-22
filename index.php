@@ -66,6 +66,7 @@ THE SOFTWARE.
         </div>
         <?php
         $ic = new Intro_Controller();
+        require_once VIEW_DIR.'marketingJibbaJabba.php';
         ?>
         <footer style="background-color: #514831; position: static; bottom: 0px; padding: 10px; width: 100%;">     
             <a href="http://jdoscodez.blogspot.com/">

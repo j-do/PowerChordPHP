@@ -20,5 +20,5 @@ require 'Utils.php';
 
 Utils::requirePHPFilesOnce(CORE_DIR);
 Utils::requirePHPFilesOnce(MODEL_DIR);
-Utils::requirePHPFilesOnce(MODULE_DIR);
+Utils::requirePHPFilesOnce(GATE_DIR);
 Utils::requirePHPFilesOnce(CONTROLLER_DIR);

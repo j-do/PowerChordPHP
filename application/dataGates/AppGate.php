@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * The MIT License
  *
  * Copyright 2014 Jason "J-Do" Hittle .
@@ -25,42 +25,20 @@
  */
 
 /**
- * Class containing static methods to validate data coming to and from the Model
- * the AppGate class extends this if you want to unleash it's full power, use
- * static methods. Put generalized validation methods here and app specific ones
- * in the AppGate class.
+ * AppGate extends the abstract class DataGate; use this class to take valid data to and
+ * from the various models in your app. Make public methods static here and lay off the
+ * controllers to unleash PowerChordPHP's full power as a rapid development framework.
  * @author Jason "J-Do" Hittle 
  */
-abstract class DataGate
+class AppGate extends DataGate
 {
-    
-    /**
-     * Returns the $default option or the option passed from the client in
-     * the superglobal array if it is indeed an option
-     * @param string $selectKey the key of the selectedOption
-     * @param array $options an array of possible options
-     * @param string $defaultOption
-     * @return string
-     */
-    static function getValidOption($selectKey, $options, $defaultOption)
+
+    static function getMarketingJibbaJabba()
     {
-        return self::isValidOption($selectKey, $options) ? $_REQUEST[$selectKey] : $defaultOption;
-    }
-       
-    /**
-     * Returns true if the value in the superglobal array is indeed an option to
-     * select.
-     * @param string $selectKey
-     * @param array $options
-     * @return boolean
-     */
-    static function isValidOption($selectKey, $options)
-    {
-        if(in_array($_REQUEST[$selectKey], $options)){
-            return true;
-        }else{
-            return false;
-        }
+        $intro = new Intro_Model();
+        //Do any validation or data cleansing here
+        //before returning the data
+        return $intro->getMarketingJibbaJabba();
     }
 
 }
