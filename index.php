@@ -58,7 +58,7 @@ THE SOFTWARE.
     <body>
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><?= PROJECT_NAME; ?></a>             
+                <a class="navbar-brand" href="https://github.com/j-do/PowerChordPHP/archive/master.zip"><?= PROJECT_NAME; ?> Download</a>             
                 <ul class="nav navbar-nav">
                     <li><a href="http://jdosdcodez.blogspot.com/">Blog</a></li>            
                 </ul>
