@@ -28,20 +28,51 @@ if (!defined('THISBESTBEDEFINED'))
  */
 
 /**
- * Extends the model class
- *
+ * Jumbotron Model extends Model: Yeah, I know I don't need to be keeping this
+ * in a database, it's for educational purposes. 
  * @author Jason "J-Do" Hittle 
  */
-class Intro_Model extends Model
+class Jumbotron_Model extends Model
 {
-
+    /**
+     * Setting the table Name per the Model Classes Command
+     */
     protected function setTableName()
     {
-        $this->tableName = 'intro';
+        $this->tableName = 'jumbotron';
     }
-    
-    function getMarketingJibbaJabba(){
-        return $this->sqlite->query("select * from {$this->tableName}");
+    /**
+     * Returns the heading for the row id you pass it, defaults to one.
+     * @param int $id
+     * @return array
+     */
+    function getHeading($id=1)
+    {
+        $results = $this->sqlite->query("select heading from {$this->tableName} "
+        . "where id = 1");
+        return $results[0]['heading'];
+    }
+    /**
+     * Returns the tagline for the row id you pass it, defaults to one.
+     * @param int $id
+     * @return array
+     */
+    function getTagline($id=1)
+    {
+        $results = $this->sqlite->query("select tagline from {$this->tableName} "
+        . "where id = 1");
+        return $results[0]['tagline'];
+    }
+    /**
+     * Returns the tagline for the row id you pass it, defaults to one.
+     * @param int $id
+     * @return array
+     */
+    function getImageUrl($id=1)
+    {
+        $results = $this->sqlite->query("select imageUrl from {$this->tableName} "
+        . "where id = 1");
+        return $results[0]['imageUrl'];
     }
 
 }

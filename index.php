@@ -60,12 +60,14 @@ THE SOFTWARE.
             <div class="container">
                 <a class="navbar-brand" href="#"><?= PROJECT_NAME; ?></a>             
                 <ul class="nav navbar-nav">
-                    <li><a href="http://powerchordphp.blogspot.com/">Blog</a></li>            
+                    <li><a href="http://jdosdcodez.blogspot.com/">Blog</a></li>            
                 </ul>
             </div>
         </div>
         <?php
+        //MVC style with a Controller
         $ic = new Intro_Controller();
+        //DataGate style without one
         require_once VIEW_DIR.'marketingJibbaJabba.php';
         ?>
         <footer style="background-color: #514831; position: static; bottom: 0px; padding: 10px; width: 100%;">     

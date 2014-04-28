@@ -1,5 +1,8 @@
 <?php
 
+if (!defined('THISBESTBEDEFINED'))
+    exit('No direct script access allowed');
+
 /*
  * The MIT License
  *
